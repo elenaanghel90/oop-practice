@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface Manager {
 
-    List<Car> selectCars(Model model, Transmission trasmission);
+    List<Car> selectCars(Model model, Transmission trasmission, Fuel fuel);
 
 }

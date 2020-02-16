@@ -1,16 +1,17 @@
 package com.elenaciuca.home.exercises.cars;
 
-//create a program that help you to select cars from a cars list filtering by the model(sedan, hatchback, sport etc) and transmission (auto, manual)
 
 public class Car {
 
     private final Transmission transmission;
     private final Model model;
+    private final Fuel fuel;
     private final String description;
 
-    public Car(Transmission transmission, Model model, String description) {
+    public Car(Transmission transmission, Model model, Fuel fuel, String description) {
         this.transmission = transmission;
         this.model = model;
+        this.fuel = fuel;
         this.description = description;
     }
 
@@ -22,12 +23,16 @@ public class Car {
         return model;
     }
 
+    public Fuel getFuel() {
+        return fuel;
+    }
+
     @Override
     public String toString() {
-        return "Car{" +
+        return "The result of your search is: " +
                 "transmission=" + transmission +
                 ", model=" + model +
                 ", description=" + description +
-                '}';
+                ", fuel= " + fuel;
     }
 }

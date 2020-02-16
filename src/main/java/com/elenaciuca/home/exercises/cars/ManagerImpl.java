@@ -11,11 +11,11 @@ public class ManagerImpl implements Manager {
         this.carList = carList;
     }
 
-    public List<Car> selectCars(Model model, Transmission transmission) {
+    public List<Car> selectCars(Model model, Transmission transmission, Fuel fuel) {
         List<Car> foundCars = new ArrayList<Car>();
 
         for (Car car : carList) {
-            if (car.getModel() == model && car.getTransmission() == transmission) {
+            if (car.getModel() == model && car.getTransmission() == transmission && car.getFuel() == fuel) {
                 foundCars.add(car);
             }
         }

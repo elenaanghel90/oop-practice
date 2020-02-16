@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23729ba-739e-4a9e-956e-7e1126769a96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Fuel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/GroceryShoppingApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Shop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/CarsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/CarsApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/ManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/ManagerImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,58 +19,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Car.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/ManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Fuel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Manager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/GroceryShoppingApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/CarsApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="98" selection-start-line="18" selection-start-column="98" selection-end-line="18" selection-end-column="98" />
+            <state relative-caret-position="206">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +46,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Model.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Shop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Cart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -114,8 +92,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Fuel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Manager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/CarsApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/ManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/GrocesryShoppingApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/ManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/ShopImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Cart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/GroceryShoppingApp.java" />
       </list>
     </option>
   </component>
@@ -129,8 +113,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="2576" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,6 +179,15 @@
               <item name="exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercises" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="groceryShopping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -205,8 +198,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581871326999" />
-    <property name="last_opened_file_path" value="C:/backupElena/exercises" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581880402831" />
+    <property name="last_opened_file_path" value="C:/backupElena/exercises/elena/Banca5" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -228,13 +221,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CarsApp">
+  <component name="RunManager" selected="Application.GroceryShoppingApp">
     <configuration name="CarsApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.elenaciuca.home.exercises.cars.CarsApp" />
       <module name="exercises" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.elenaciuca.home.exercises.cars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroceryShoppingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.elenaciuca.home.exercises.groceryShopping.GroceryShoppingApp" />
+      <module name="exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elenaciuca.home.exercises.groceryShopping.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,6 +263,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GroceryShoppingApp" />
         <item itemvalue="Application.CarsApp" />
         <item itemvalue="Application.ManagerImpl" />
       </list>
@@ -274,9 +281,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13672496" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13672496" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -286,13 +292,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19333333" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2822222" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35555556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -362,6 +368,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Fuel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/ShopImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/ManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/CarsApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -372,43 +422,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/ManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/GroceryShoppingApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Fuel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/cars/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>

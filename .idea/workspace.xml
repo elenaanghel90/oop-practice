@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c23729ba-739e-4a9e-956e-7e1126769a96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/aBeginnersGuide/Help.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/aBeginnersGuide/Sound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/AbstractClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/BasePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/ConcreteClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Gerbil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Hamster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/IntegerPrinte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Rodent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/RodentApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,19 +24,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Product.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/AbstractClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="51">
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/ConcreteClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/GroceryShoppingApp.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Rodent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#223#224#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/RodentApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,37 +69,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/aBeginnersGuide/Sound.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Mouse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/aBeginnersGuide/Help.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Shop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/Cart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="221">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding>
+                <element signature="e#123#124#0" expanded="true" />
+                <element signature="e#170#171#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,6 +120,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/groceryShopping/GroceryShoppingApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/aBeginnersGuide/Sound.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/aBeginnersGuide/Help.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Gerbil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Hamster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Abstract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/BasePrinter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/IntegerPrinte.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/AbstractClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Mouse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Rodent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/ConcreteClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/RodentApp.java" />
       </list>
     </option>
   </component>
@@ -171,15 +193,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="aBeginnersGuide" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exercises" type="462c0819:PsiDirectoryNode" />
               <item name="cars" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -204,6 +217,15 @@
               <item name="exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="exercises" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="rodent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -215,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582568541865" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582661408838" />
     <property name="last_opened_file_path" value="C:/backupElena/exercises/elena/Banca5" />
   </component>
   <component name="RecentsManager">
@@ -238,13 +260,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Help">
-    <configuration name="CarsApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.elenaciuca.home.exercises.cars.CarsApp" />
+  <component name="RunManager" selected="Application.ConcreteClass">
+    <configuration name="BasePrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.elenaciuca.home.exercises.rodent.BasePrinter" />
       <module name="exercises" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.elenaciuca.home.exercises.cars.*" />
+          <option name="PATTERN" value="com.elenaciuca.home.exercises.rodent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -252,12 +274,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroceryShoppingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.elenaciuca.home.exercises.groceryShopping.GroceryShoppingApp" />
+    <configuration name="ConcreteClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.elenaciuca.home.exercises.rodent.ConcreteClass" />
       <module name="exercises" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.elenaciuca.home.exercises.groceryShopping.*" />
+          <option name="PATTERN" value="com.elenaciuca.home.exercises.rodent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -278,12 +300,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.elenaciuca.home.exercises.elevators.ManagerImpl" />
+    <configuration name="RodentApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.elenaciuca.home.exercises.rodent.RodentApp" />
       <module name="exercises" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.elenaciuca.home.exercises.elevators.*" />
+          <option name="PATTERN" value="com.elenaciuca.home.exercises.rodent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -306,11 +328,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConcreteClass" />
+        <item itemvalue="Application.BasePrinter" />
+        <item itemvalue="Application.RodentApp" />
         <item itemvalue="Application.Help" />
         <item itemvalue="Application.Sound" />
-        <item itemvalue="Application.GroceryShoppingApp" />
-        <item itemvalue="Application.CarsApp" />
-        <item itemvalue="Application.ManagerImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +350,7 @@
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1363275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1363275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -338,15 +360,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35555556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2489019" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2488889" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3288889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -502,8 +524,107 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/aBeginnersGuide/Help.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        <state relative-caret-position="323">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Gerbil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Hamster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Abstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/IntegerPrinte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/BasePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/AbstractClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Mouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/Rodent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/RodentApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elenaciuca/home/exercises/rodent/ConcreteClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>

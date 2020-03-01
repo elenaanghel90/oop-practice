@@ -1,6 +1,6 @@
 package com.elenaciuca.home.exercises.polymorphism.music.polymorphism.ciclism;
 
-//demonstrating that the instance of each type of unicycle, bicycle and tricycle can be upcasted to the Cycle wia ride method
+//demonstrating that the instance of each type of unicycle, bicycle and tricycle can be upcasted to the Cycle via ride method
 public class Vehicles {
     public static void main(String[] args) {
         Unicycle unicycle1 = new Unicycle();

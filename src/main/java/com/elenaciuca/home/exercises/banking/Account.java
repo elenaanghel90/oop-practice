@@ -9,11 +9,18 @@ public class Account {
     private BigDecimal balance;
     private String accountHolder;
 
-
+    //this is used to create a new account
     public Account(String accountHolder) {
         this.iban = generateNewIban();
         this.accountHolder = accountHolder;
         this.balance = BigDecimal.ZERO;
+    }
+
+    //this is used to create the account from CSV
+    public Account(String accountHolder, String iban, BigDecimal balance) {
+        this.accountHolder = accountHolder;
+        this.iban = iban;
+        this.balance = balance;
     }
 
     public String getIban() {

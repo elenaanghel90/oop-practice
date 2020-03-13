@@ -18,6 +18,7 @@ public class BankingApp {
 
         Scanner scan = new Scanner(System.in);
         AccountManager accountManager = new AccountManager();
+        accountManager.loadAccountsFromCSV();
 
         while (true) {
             Integer option = readOptionFromKeyboard(scan);
@@ -29,10 +30,11 @@ public class BankingApp {
                     accountManager.createNewAccount(desiredAccountHolder);
                     break;
                 case 2:
-                    System.out.println("Show the list of accounts: ");
+                    System.out.println("The list of accounts: ");
                     accountManager.getAccounts().forEach(System.out::println);
                     break;
                 case 0:
+                    accountManager.exportAccountsToCSV();
                     scan.close();
                     return;
                 default:
@@ -55,6 +57,7 @@ public class BankingApp {
 
     public static void showTheMenu() {
         System.out.println("1. Create an account: ");
+        System.out.println("2. Show the list of accounts: ");
         System.out.println("0. Quit");
     }
 }

@@ -22,7 +22,9 @@ public class AccountCSVRepository {
     public void saveAccount(Account account) {
         accounts.add(account);
     }
-
+    public void deleteAccount(Account account) {
+        accounts.remove(account);
+    }
     public void loadAccountsFromCSV() {
         Path path = Paths.get("C:\\Users\\elena\\OneDrive\\Desktop\\UsersAccounts.csv");
 
@@ -71,7 +73,7 @@ public class AccountCSVRepository {
 //        }
         try {
             Files.write(path, lines);
-            System.out.println("The account was successfully exported!");
+            System.out.println("The accounts were successfully exported!");
         } catch (IOException e) {
             throw new RuntimeException("Error in saving the account!", e);
         }

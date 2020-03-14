@@ -43,6 +43,29 @@ public class BankingApp {
                             .orElse("The account does not exist!");
                     System.out.println(message);
                     break;
+                case 4:
+                    System.out.println("Please write the iban: ");
+                    String ibanDesiredToDelete = scan.nextLine();
+                    Optional<Account> accountToDeleteOptional = accountManager.getAccountByIban(ibanDesiredToDelete);
+                    accountToDeleteOptional.ifPresent(account -> {
+                        accountManager.deleteTheAccount(account);
+                        System.out.println("Account deleted successfully!");
+                    });
+                    break;
+                case 5:
+                    System.out.println("Please write the iban of the account to change the holder name: ");
+                    String desiredIban = scan.nextLine();
+                    //ar fi fost optional, dar pentru ca i-am dat o alternativasa nu dea null cu OrElseThow, ne returneaza Account
+                    Account accountByIban = accountManager.getAccountByIban(desiredIban).orElseThrow(() -> new RuntimeException("The account does not exists"));
+                    System.out.println("Please write the new holder name: ");
+                    String introducedAccountHolder = scan.nextLine();
+                    accountManager.updateTheHolderName(accountByIban, introducedAccountHolder);
+                    break;
+                case 6:
+                    System.out.println("Please write the name of the holder: ");
+                    String desiredName = scan.nextLine();
+                    accountManager.getAccountsByName(desiredName).forEach(System.out::println);
+                    break;
                 case 0:
                     accountCSVRepository.exportAccountsToCSV();
                     scan.close();
@@ -51,8 +74,6 @@ public class BankingApp {
                     System.out.println("Please choose an option from menu! ");
             }
         }
-
-
     }
 
     private static Integer readOptionFromKeyboard(Scanner scan) {
@@ -68,6 +89,10 @@ public class BankingApp {
     public static void showTheMenu() {
         System.out.println("1. Create an account: ");
         System.out.println("2. Show the list of accounts: ");
+        System.out.println("3. Show the account with the iban: ");
+        System.out.println("4. Delete the account with the iban: ");
+        System.out.println("5. Update the holder name of the account with the iban: ");
+        System.out.println("6. Show the accounts with the name: ");
         System.out.println("0. Quit");
     }
 }

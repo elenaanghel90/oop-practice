@@ -35,6 +35,11 @@ public class Account {
         return accountHolder;
     }
 
+    public Account setAccountHolder(String accountHolder) {
+        this.accountHolder = accountHolder;
+        return this;
+    }
+
     private String generateNewIban() {
         Random random = new Random();
         String countryCode = "RO";

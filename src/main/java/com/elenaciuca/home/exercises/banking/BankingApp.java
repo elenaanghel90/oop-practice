@@ -1,6 +1,6 @@
 package com.elenaciuca.home.exercises.banking;
 
-import java.util.Arrays;
+import java.util.Optional;
 import java.util.Scanner;
 
 /**
@@ -17,8 +17,9 @@ public class BankingApp {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        AccountManager accountManager = new AccountManager();
-        accountManager.loadAccountsFromCSV();
+        AccountCSVRepository accountCSVRepository = new AccountCSVRepository();
+        AccountManager accountManager = new AccountManager(accountCSVRepository);
+        accountCSVRepository.loadAccountsFromCSV();
 
         while (true) {
             Integer option = readOptionFromKeyboard(scan);
@@ -33,8 +34,17 @@ public class BankingApp {
                     System.out.println("The list of accounts: ");
                     accountManager.getAccounts().forEach(System.out::println);
                     break;
+                case 3:
+                    System.out.println("Please write the iban: ");
+                    String ibanDesired = scan.nextLine();
+                    Optional<Account> accountOptional = accountManager.getAccountByIban(ibanDesired);
+                    String message = accountOptional
+                            .map(Object::toString) //it is possible that the account does not exist and with orElse we provide the alternative values/ message
+                            .orElse("The account does not exist!");
+                    System.out.println(message);
+                    break;
                 case 0:
-                    accountManager.exportAccountsToCSV();
+                    accountCSVRepository.exportAccountsToCSV();
                     scan.close();
                     return;
                 default:

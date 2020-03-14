@@ -1,6 +1,7 @@
 package com.elenaciuca.home.exercises.banking;
 
 import java.util.List;
+import java.util.Optional;
 
 public class AccountManager {
     private final AccountCSVRepository accountCSVRepository;
@@ -21,8 +22,15 @@ public class AccountManager {
 
         return account;
     }
+    public Optional<Account> getAccountByIban(String iban){
+      List<Account> accounts = accountCSVRepository.getAccounts();
+      Optional<Account> accountFound= accounts.stream()
+              .filter(account -> account.getIban().equals(iban))
+              .findFirst();
+      return accountFound;
+    }
 
-    //delete an account from iban
+    //delete an account by name
     //get an account by iban
     //update an account by iban
     //search by name (can provide many results according to a name)

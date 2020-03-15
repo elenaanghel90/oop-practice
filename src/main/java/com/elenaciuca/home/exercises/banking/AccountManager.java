@@ -1,12 +1,12 @@
 package com.elenaciuca.home.exercises.banking;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class AccountManager {
     private final AccountCSVRepository accountCSVRepository;
-
 
     public AccountManager(AccountCSVRepository accountCSVRepository) {
         this.accountCSVRepository = accountCSVRepository;
@@ -56,9 +56,16 @@ public class AccountManager {
         accountCSVRepository.deleteAccount(account);
     }
 
-    //delete an account by name
-    //get an account by iban
-    //update an account by iban
-    //search by name (can provide many results according to a name)
+    public void sendTheMoney(BigDecimal sum, String ibanSourceAccount, String ibanDestinationAccount) {
+        Account sourceAccount = getAccountByIban(ibanSourceAccount).orElseThrow(() -> new RuntimeException("The introduced iban is not correct!"));
+        Account destinationAccount = getAccountByIban(ibanDestinationAccount).orElseThrow(() -> new RuntimeException("The introduced iban is not correct!"));
+        sourceAccount.debitAccount(sum);
+       try {
+           destinationAccount.creditAccount(sum);
+       }
+       catch(Exception e){
+           sourceAccount.creditAccount(sum); //in cazul in care ai o eroare, ca sa nu ramana intr-o stare inconsistenta, adica sa nu ramana contul sursa debitat(fara banii pe care trebuia sa ii transfere)
+       }
+    }
 
 }

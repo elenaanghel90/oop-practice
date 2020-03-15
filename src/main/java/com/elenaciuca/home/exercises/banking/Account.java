@@ -49,6 +49,17 @@ public class Account {
         return String.format("%s%s%011d", countryCode, bankCode, accountNumber);
     }
 
+    public void debitAccount(BigDecimal sum) {
+        if (balance.compareTo(sum) < 0) { //compareTo returneaza -1, 0, 1
+            throw new IllegalArgumentException("Your don't have enough money to transfer!");
+        }
+        balance = balance.subtract(sum); //daca arunci o eceptie pe if si se executa nu mai ai nevoie sa pui else
+    }
+
+    public void creditAccount(BigDecimal sum) {
+        balance = balance.add(sum);
+    }
+
     @Override
     public String toString() {
         return "Account{" +

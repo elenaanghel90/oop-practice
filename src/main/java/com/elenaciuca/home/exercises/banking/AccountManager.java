@@ -24,7 +24,7 @@ public class AccountManager {
         return account;
     }
 
-    public Optional<Account> getAccountByIban(String iban) {
+    public Optional<Account> findAccountByIban(String iban) {
         List<Account> accounts = accountCSVRepository.getAccounts();
         Optional<Account> foundAccount = accounts.stream()
                 .filter(account -> account.getIban().equals(iban))
@@ -57,15 +57,22 @@ public class AccountManager {
     }
 
     public void sendTheMoney(BigDecimal sum, String ibanSourceAccount, String ibanDestinationAccount) {
-        Account sourceAccount = getAccountByIban(ibanSourceAccount).orElseThrow(() -> new RuntimeException("The introduced iban is not correct!"));
-        Account destinationAccount = getAccountByIban(ibanDestinationAccount).orElseThrow(() -> new RuntimeException("The introduced iban is not correct!"));
+        Account sourceAccount = getExistingAccountByIban(ibanSourceAccount);
+        Account destinationAccount = getExistingAccountByIban(ibanDestinationAccount);
         sourceAccount.debitAccount(sum);
-       try {
-           destinationAccount.creditAccount(sum);
-       }
-       catch(Exception e){
-           sourceAccount.creditAccount(sum); //in cazul in care ai o eroare, ca sa nu ramana intr-o stare inconsistenta, adica sa nu ramana contul sursa debitat(fara banii pe care trebuia sa ii transfere)
-       }
+        try {
+            destinationAccount.creditAccount(sum);
+        } catch (Exception e) {
+            sourceAccount.creditAccount(sum); //in cazul in care ai o eroare, ca sa nu ramana intr-o stare inconsistenta, adica sa nu ramana contul sursa debitat(fara banii pe care trebuia sa ii transfere)
+        }
     }
 
+    public Account getExistingAccountByIban(String iban) {
+        return findAccountByIban(iban).orElseThrow(() -> new RuntimeException("The introduced iban is not correct!"));
+    }
+
+    public void topUpAnAccount(BigDecimal sum, String iban) {
+        Account account = getExistingAccountByIban(iban);
+        account.creditAccount(sum);
+    }
 }

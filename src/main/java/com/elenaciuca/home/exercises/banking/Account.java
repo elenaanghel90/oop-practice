@@ -53,7 +53,7 @@ public class Account {
         if (balance.compareTo(sum) < 0) { //compareTo returneaza -1, 0, 1
             throw new IllegalArgumentException("Your don't have enough money to transfer!");
         }
-        balance = balance.subtract(sum); //daca arunci o eceptie pe if si se executa nu mai ai nevoie sa pui else
+        balance = balance.subtract(sum); //daca arunci o exceptie pe if si se executa nu mai ai nevoie sa pui else
     }
 
     public void creditAccount(BigDecimal sum) {

@@ -1,5 +1,8 @@
 package com.elenaciuca.home.exercises.banking;
 
+import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -22,51 +25,72 @@ public class BankingApp {
         accountCSVRepository.loadAccountsFromCSV();
 
         while (true) {
-            Integer option = readOptionFromKeyboard(scan);
+            MenuItem option = readOptionFromKeyboard(scan);
 
             switch (option) {
-                case 1:
+                case CREATE_AN_ACCOUNT:
                     System.out.println("Please provide the account details: ");
                     String desiredAccountHolder = scan.nextLine();
                     accountManager.createNewAccount(desiredAccountHolder);
                     break;
-                case 2:
+                case SHOW_THE_LIST_OF_ACCOUNTS:
                     System.out.println("The list of accounts: ");
                     accountManager.getAccounts().forEach(System.out::println);
                     break;
-                case 3:
+                case SHOW_THE_ACCOUNT_OF_THE_IBAN:
                     System.out.println("Please write the iban: ");
                     String ibanDesired = scan.nextLine();
-                    Optional<Account> accountOptional = accountManager.getAccountByIban(ibanDesired);
+                    Optional<Account> accountOptional = accountManager.findAccountByIban(ibanDesired);
                     String message = accountOptional
                             .map(Object::toString) //it is possible that the account does not exist and with orElse we provide the alternative values/ message
                             .orElse("The account does not exist!");
                     System.out.println(message);
                     break;
-                case 4:
+                case DELETE_THE_ACCOUNT_WITH_THE_IBAN:
                     System.out.println("Please write the iban: ");
                     String ibanDesiredToDelete = scan.nextLine();
-                    Optional<Account> accountToDeleteOptional = accountManager.getAccountByIban(ibanDesiredToDelete);
-                    accountToDeleteOptional.ifPresent(account -> {
-                        accountManager.deleteTheAccount(account);
-                        System.out.println("Account deleted successfully!");
-                    });
+                    Account accountToDelete = accountManager.getExistingAccountByIban(ibanDesiredToDelete);
+                    accountManager.deleteTheAccount(accountToDelete);
+                    System.out.println("Account deleted successfully!");
                     break;
-                case 5:
+                case UPDATE_THE_HOLDER_NAME_OF_THE_ACCOUNT_OF_THE_IBAN:
                     System.out.println("Please write the iban of the account to change the holder name: ");
                     String desiredIban = scan.nextLine();
-                    //ar fi fost optional, dar pentru ca i-am dat o alternativasa nu dea null cu OrElseThow, ne returneaza Account
-                    Account accountByIban = accountManager.getAccountByIban(desiredIban).orElseThrow(() -> new RuntimeException("The account does not exists"));
+                    //ar fi fost optional, dar pentru ca i-am dat o alternativa sa nu dea null cu OrElseThow, ne returneaza Account
+                    Account account = accountManager.getExistingAccountByIban(desiredIban);
                     System.out.println("Please write the new holder name: ");
                     String introducedAccountHolder = scan.nextLine();
-                    accountManager.updateTheHolderName(accountByIban, introducedAccountHolder);
+                    accountManager.updateTheHolderName(account, introducedAccountHolder);
                     break;
-                case 6:
+                case SHOW_THE_ACCOUNTS_WITH_THE_NAME:
                     System.out.println("Please write the name of the holder: ");
                     String desiredName = scan.nextLine();
                     accountManager.getAccountsByName(desiredName).forEach(System.out::println);
                     break;
-                case 0:
+                case TRANSFER_THE_MONEY_BETWEEN_TWO_ACCOUNTS:
+                    System.out.println("Please write the sum you wish to transfer: ");
+                    BigDecimal sum = scan.nextBigDecimal();
+                    scan.nextLine();
+                    System.out.println("Please write the iban of the source account: ");
+                    String sourceAccount = scan.nextLine();
+                    System.out.println("Please write the iban of the destination account: ");
+                    String destinationAccount = scan.nextLine();
+                    accountManager.sendTheMoney(sum, sourceAccount, destinationAccount);
+                    System.out.println("The money were transferred successfully!");
+                    break;
+                case TOP_UP_THE_ACCOUNT:
+                    System.out.println("Please write the sum you wish to transfer: ");
+                    BigDecimal sumMoney = scan.nextBigDecimal();
+                    scan.nextLine();
+                    System.out.println("Please write the iban of the destination account: ");
+                    String destinationIban = scan.nextLine();
+                    accountManager.topUpAnAccount(sumMoney, destinationIban);
+                    accountManager.findAccountByIban(destinationIban).ifPresent(account1 ->
+                            System.out.println("The new balance is: " + account1.getBalance())
+                    );
+                    System.out.println("The account was topped up successfully!");
+                    break;
+                case QUIT:
                     accountCSVRepository.exportAccountsToCSV();
                     scan.close();
                     return;
@@ -76,23 +100,18 @@ public class BankingApp {
         }
     }
 
-    private static Integer readOptionFromKeyboard(Scanner scan) {
+    private static MenuItem readOptionFromKeyboard(Scanner scan) {
         String input;
         do {
             showTheMenu();
             input = scan.nextLine().trim();
         } while (input.equals(""));
-
-        return Integer.parseInt(input);
+        int option = Integer.parseInt(input);
+        return MenuItem.fromId(option);
     }
 
     public static void showTheMenu() {
-        System.out.println("1. Create an account: ");
-        System.out.println("2. Show the list of accounts: ");
-        System.out.println("3. Show the account with the iban: ");
-        System.out.println("4. Delete the account with the iban: ");
-        System.out.println("5. Update the holder name of the account with the iban: ");
-        System.out.println("6. Show the accounts with the name: ");
-        System.out.println("0. Quit");
+        MenuItem[] menuItems = MenuItem.values(); //pt ca values ne retunreaza un array
+        Arrays.stream(menuItems).forEach(menuItem -> System.out.println(menuItem));
     }
 }

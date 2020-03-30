@@ -34,5 +34,6 @@ public class Car {
                 ", model=" + model +
                 ", description=" + description +
                 ", fuel= " + fuel;
+    //System.out.println("test");
     }
 }
